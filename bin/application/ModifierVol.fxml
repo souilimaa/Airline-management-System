@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ModifierVolController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="438.0" fitWidth="779.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/avionSky.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="43.0" layoutY="50.0" prefHeight="368.0" prefWidth="711.0" style="-fx-background-color: #1A1719; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="188.0" layoutY="45.0" text="Recherché par Vol Id" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <TextField fx:id="cherche_par_id_vol" layoutX="355.0" layoutY="45.0" />
+                  <TextField fx:id="mod_h_depart" layoutX="161.0" layoutY="144.0" />
+                  <TextField fx:id="mod_nbr_place" layoutX="161.0" layoutY="185.0" />
+                  <TextField fx:id="mod_vol_nom" layoutX="161.0" layoutY="99.0" />
+                  <TextField fx:id="mod_h_arivee" layoutX="508.0" layoutY="185.0" />
+                  <TextField fx:id="mod_frais_vol" layoutX="508.0" layoutY="224.0" />
+                  <DatePicker fx:id="mod_date_dep" layoutX="161.0" layoutY="226.0" />
+                  <Label layoutX="29.0" layoutY="230.0" text="Date de Départ" textFill="WHITE" />
+                  <Label layoutX="33.0" layoutY="185.0" text="Nombre de Place" textFill="WHITE" />
+                  <Label layoutX="34.0" layoutY="148.0" text="Heure de Départ" textFill="WHITE" />
+                  <Label layoutX="399.0" layoutY="103.0" text="Source" textFill="WHITE" />
+                  <Button fx:id="btn_mod" layoutX="146.0" layoutY="288.0" mnemonicParsing="false" onAction="#modifierVol" prefHeight="44.0" prefWidth="179.0" styleClass="trans-btn-white-border" stylesheets="@../application/application.css" text="Modifier le Vol">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="399.0" layoutY="230.0" text="Frais de Vol" textFill="WHITE" />
+                  <Label layoutX="399.0" layoutY="185.0" text="Heure d'Arivée" textFill="WHITE" />
+                  <Label layoutX="399.0" layoutY="148.0" text="Destination" textFill="WHITE" />
+                  <Label layoutX="37.0" layoutY="103.0" text="Nom du Vol" textFill="WHITE" />
+                  <Button fx:id="btn_supr" layoutX="388.0" layoutY="288.0" mnemonicParsing="false" onAction="#supprimerVol" prefHeight="44.0" prefWidth="179.0" styleClass="trans-btn-white-border" stylesheets="@../application/application.css" text="Supprimer le Vol">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_mod_chercher" layoutX="530.0" layoutY="37.0" mnemonicParsing="false" onAction="#chercherVol" prefHeight="27.0" prefWidth="119.0" styleClass="trans-btn-white-border" stylesheets="@../application/application.css" text="Chercher">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="mod_source" layoutX="508.0" layoutY="99.0" />
+                  <TextField fx:id="mod_des" layoutX="508.0" layoutY="144.0" />
+               </children>
+            </Pane>
+            <Label layoutX="259.0" text="Modifier les Vols">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

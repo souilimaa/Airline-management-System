@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListeTicket_dateDepartController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="439.0" fitWidth="779.0" layoutX="-1.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/avionSky.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="34.0" layoutY="65.0" prefHeight="306.0" prefWidth="711.0" style="-fx-background-color: #1A1719; -fx-background-radius: 10;">
+               <children>
+                  <Button fx:id="btn_cherche_tdp" layoutX="473.0" layoutY="29.0" mnemonicParsing="false" onAction="#cherchertdp" prefHeight="30.0" prefWidth="85.0" styleClass="trans-btn-white-border" stylesheets="@../application/application.css" text="Chercher" />
+                  <TableView fx:id="Ticktable" layoutX="21.0" layoutY="80.0" prefHeight="200.0" prefWidth="664.0">
+                    <columns>
+                      <TableColumn fx:id="cul_TickId" prefWidth="72.0" text="TicketNum" />
+                      <TableColumn fx:id="cul_PassId" minWidth="0.0" prefWidth="97.0" text="ID du Passager" />
+                        <TableColumn fx:id="cul_PassNom" minWidth="0.0" prefWidth="139.0" text="Nom du Passager" />
+                        <TableColumn fx:id="cul_VolID" prefWidth="60.0" text="Vol ID" />
+                        <TableColumn fx:id="cul_VolNom" prefWidth="142.0" text="Vol Nom" />
+                        <TableColumn fx:id="cul_Tdatedepart" prefWidth="153.0" text="date depart" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="166.0" layoutY="35.0" text="Date de Départ" textFill="WHITE" />
+                  <DatePicker fx:id="tdp" layoutX="266.0" layoutY="31.0" />
+                  <Button fx:id="btn_toutTdp" layoutX="596.0" layoutY="31.0" mnemonicParsing="false" onAction="#toutTicketdp" prefHeight="30.0" prefWidth="69.0" styleClass="trans-btn-white-border" stylesheets="@../application/application.css" text="Tout" />
+               </children>
+            </Pane>
+            <Label layoutX="28.0" prefHeight="61.0" prefWidth="733.0" text="Liste des Tickets par date de depart du vol" textFill="#2c2a2a">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

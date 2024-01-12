@@ -1,0 +1,51 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.clss{
+	-fx-background:white;
+}
+.btnAjouter {
+    -fx-background-color:#647ac2;
+}
+
+.btnAjouter:hover {
+    -fx-background-color:#445db2;
+}
+.btn{
+	    -fx-background-color:#879fed;
+	
+}
+.btn:hover{
+	 -fx-background-color:#445db2;
+}
+.lbl{
+-fx-color:#499de5;
+}
+.aff{
+	-fx-color:#71c95c;
+	}
+	.disabled{
+		-fx-color:black;
+	}
+	.nett{
+		-fx-background-color:#71c95c;
+	}
+	.nett:hover{
+		-fx-background-color:#51a83d;
+	}
+	.login{
+		-fx-background-radius: 5;
+		-fx-background-color:white;
+		-fx-effect: dropshadow(three-pass-box, #e9e9e9, 10, 0, 0, 0);
+	}
+	.trans-btn-white-border {
+	-fx-background-color: transparent ;
+	-fx-background-radius: 5px;
+	-fx-border-color: #cccccc ;
+	-fx-border-radius: 5px;
+	-fx-border-width: 1px;
+	-fx-text-fill: whitesmoke;
+	}
+	.disabled{
+		-fx-color:black;
+	}
+	
+
